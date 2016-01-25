@@ -1,0 +1,2 @@
+﻿
+RAlt & Tab::send >!{Esc}
