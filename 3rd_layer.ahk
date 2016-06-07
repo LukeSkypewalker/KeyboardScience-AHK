@@ -7,7 +7,7 @@
 ;Capslock::Control - this one should work !
 ;SetCapsLockState AlwaysOff
 
-
+SendMode Input
 
 *CapsLock::
   SetKeyDelay -1
@@ -52,7 +52,7 @@ RAlt & SC26 :: send {Down}		;l
 RAlt & SC27 :: send {Right}		;;
 RAlt & SC28 :: send {PgDn}		;'
 
-RAlt & SC32 :: send {Backspace}		;m
-RAlt & SC33 :: send {Del}		;,
-;RAlt & SC34 :: send {}		;.
+;RAlt & SC32 :: send ^+{F10}		;.
+RAlt & SC33 :: send {Backspace}		;m
+RAlt & SC34 :: send {Del}		;,
 ;RAlt & SC35 :: send {}		;/

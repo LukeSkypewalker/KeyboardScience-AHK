@@ -26,7 +26,7 @@ return
 	SC17::u
 	SC18::h
 	SC19::l
-	SC1A::;
+	SC1A::p
 	SC1B::[
 	SC2B::]
 
@@ -40,7 +40,7 @@ return
 	SC28::r
 
 	SC31::/
-	SC32::p
+	SC32::;
 	SC33::m
 	SC34::,
 	SC35::.
