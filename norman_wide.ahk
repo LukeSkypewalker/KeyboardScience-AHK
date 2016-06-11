@@ -18,29 +18,30 @@ return
 
 #if english==true
 
-	SC12::d
-	SC13::f
+	SC11::d
+	SC12::f
+	SC13::p
 	SC14::k
 	SC15::\
-	SC16::j
+	SC16::y
 	SC17::u
 	SC18::h
 	SC19::l
-	SC1A::p
+	SC1A::j
 	SC1B::[
 	SC2B::]
 
 	SC20::e
 	SC21::t
 	SC23::'
-	SC24::y
+	SC24::;
 	SC25::n
 	SC26::i
 	SC27::o
 	SC28::r
 
 	SC31::/
-	SC32::;
+	SC32::w
 	SC33::m
 	SC34::,
 	SC35::.

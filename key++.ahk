@@ -10,11 +10,16 @@ send ^s
 reload
 return
 
+^!+s:: suspend
+^+=:: reload
+
+
+
 
 #include norman_wide.ahk
 #include 3rd_layer.ahk
 #include number_raw_swap.ahk
-#include ru.ahk
+;#include ru.ahk
 
 ;#include mouse.ahk
 

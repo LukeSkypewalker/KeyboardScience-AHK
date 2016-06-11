@@ -1,25 +1,5 @@
 ﻿;3rd level layout-------------------------------
 
-;RAlt = AltGr = Ctrl+Alt ?
-;+Capslock::Capslock
-;{Capslock down}::{RAlt down}
-;{Capslock up}::{RAlt up}
-;Capslock::Control - this one should work !
-;SetCapsLockState AlwaysOff
-
-SendMode Input
-
-*CapsLock::
-  SetKeyDelay -1
-  Send {Blind}{RAlt DownTemp}
-return
-
-*CapsLock up::
-  SetKeyDelay -1
-  Send {Blind}{RAlt Up}
-return
-
-
 RAlt & SC10 :: send {+}		;q
 RAlt & SC11 :: send {7}		;w
 RAlt & SC12 :: send {8}		;e
@@ -39,7 +19,6 @@ RAlt & SC2f :: send {3}		;v
 RAlt & SC30 :: send {/}		;b
 
 
-
 RAlt & SC16 :: send {}		;u
 RAlt & SC17 :: send {Home}		;i
 RAlt & SC18 :: send {Up}		;o
@@ -52,7 +31,11 @@ RAlt & SC26 :: send {Down}		;l
 RAlt & SC27 :: send {Right}		;;
 RAlt & SC28 :: send {PgDn}		;'
 
-;RAlt & SC32 :: send ^+{F10}		;.
-RAlt & SC33 :: send {Backspace}		;m
-RAlt & SC34 :: send {Del}		;,
-;RAlt & SC35 :: send {}		;/
+RAlt & SC31 :: send ^+{F10}		;n
+RAlt & SC32 :: send {Backspace}	;m
+RAlt & SC33 :: send {Del}		;,
+RAlt & SC34 :: send {,}			;.
+RAlt & SC35 :: send {.}			;/
+
+RAlt & SC39 :: send {Space}
+RAlt & SC1C :: send {Enter}
