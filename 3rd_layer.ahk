@@ -19,17 +19,18 @@ RAlt & SC2f :: send {3}		;v
 RAlt & SC30 :: send {/}		;b
 
 
+
 RAlt & SC16 :: send {}		;u
-RAlt & SC17 :: send {Home}		;i
-RAlt & SC18 :: send {Up}		;o
-RAlt & SC19 :: send {End}		;p
+RAlt & SC17 :: SendMod("Home")	;i
+RAlt & SC18 :: SendMod("Up")		;o
+RAlt & SC19 :: SendMod("End")		;p
 RAlt & SC1A :: send {PgUp}		;[
 
-;RAlt & SC24 :: send {}		;j
-RAlt & SC25 :: send {Left}		;k
-RAlt & SC26 :: send {Down}		;l
-RAlt & SC27 :: send {Right}		;;
-RAlt & SC28 :: send {PgDn}		;'
+RAlt & SC24 :: send {Backspace}		;j
+RAlt & SC25 :: SendMod("Left")
+RAlt & SC26 :: SendMod("Down")
+RAlt & SC27 :: SendMod("Right")		;;
+RAlt & SC28 :: send {Del}		;'
 
 RAlt & SC31 :: send ^+{F10}		;n
 RAlt & SC32 :: send {Backspace}	;m
@@ -39,3 +40,22 @@ RAlt & SC35 :: send {.}			;/
 
 RAlt & SC39 :: send {Space}
 RAlt & SC1C :: send {Enter}
+
+
+
+SendMod(action){
+	if GetKeyState("Shift", "P"){
+		if GetKeyState("Ctrl", "P"){
+			send +^{%action%}
+		} else {
+			send +{%action%}
+		}
+	} else {
+		if GetKeyState("Ctrl", "P"){
+			send ^{%action%}
+		} else {
+			send {%action%}
+		}
+	}
+	return
+}
