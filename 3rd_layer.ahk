@@ -7,7 +7,7 @@ RAlt & SC12 :: send {8}				;e
 RAlt & SC13 :: send {9}				;r
 RAlt & SC14 :: send {*}				;t
 
-RAlt & SC1e :: send {0}				;a
+RAlt & SC1e :: SendCtrl("a", "0")	;a
 RAlt & SC1f :: SendCtrl("s", "4")	;s
 RAlt & SC20 :: SendCtrl("d", "5")	;d
 RAlt & SC21 :: SendCtrl("f", "6")	;f
