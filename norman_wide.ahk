@@ -1,22 +1,10 @@
-;KEYBOARD LAYOUT--------------------------------
-
-;Norman layout with WIDE mod (all RightSide keys shift to right by one key)
-;It gives a much more comfortable wrirst position, less distance to shift, enter, backspace,
+;WIDE mod (all RightSide keys shift to right by one key)
+;It gives a much more comfortable wrirst position, less distance to shift, enter, backspace
 ;It gives ability of using AltGr by Thumb finger (for 3rd level layout)
 
-;$ prevent from loops like a::b b::a a::b...
-
-capslock::
-	if (english==true){
-		english:=false
-	}else {
-		english:=true
-	}
-	send {Alt down}{shift}{Alt up}
-return
 
 
-#if english==true
+#if english==true and GetKeyState("LCTRL","P")==false and GetKeyState("LWin","P")==false
 
 	SC11::d
 	SC12::f

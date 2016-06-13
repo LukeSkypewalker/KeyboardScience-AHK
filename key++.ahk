@@ -5,25 +5,30 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 english:=true
 
-^!s::
+^!SC1F::
 send ^s
 reload
 return
 
-^!+s:: suspend
-^+=:: reload
+^!+SC1F:: suspend
+^+SC13:: reload
 
 
+capslock::
+	if (english==true){
+		english:=false
+	}else {
+		english:=true
+	}
+	send {Alt down}{shift}{Alt up}
+return
 
 
 #include norman_wide.ahk
 #include 3rd_layer.ahk
 #include number_raw_swap.ahk
 ;#include ru.ahk
-
 ;#include mouse.ahk
 
 
 ;TODO AltGr -some action or disable
-
-

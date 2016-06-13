@@ -1,4 +1,7 @@
-﻿$1::sendraw !
+﻿;$ prevent from loops like a::b b::a a::b...
+;` is escape symbol `% = %
+
+$1::sendraw !
 $2::sendraw @
 $3::sendraw #
 $4::sendraw $
