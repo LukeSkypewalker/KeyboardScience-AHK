@@ -3,8 +3,7 @@
 ;It gives ability of using AltGr by Thumb finger (for 3rd level layout)
 
 
-
-#if english==true and GetKeyState("LCTRL","P")==false and GetKeyState("LWin","P")==false
+#if english==true and GetKeyState("LCTRL","P")==false and GetKeyState("RAlt","P")==false and GetKeyState("LWin","P")==false
 
 	SC11::d
 	SC12::f

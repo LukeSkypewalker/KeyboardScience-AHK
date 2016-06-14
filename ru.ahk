@@ -1,4 +1,4 @@
-#if english==false and GetKeyState("LCTRL","P")==false and GetKeyState("LWin","P")==false
+﻿#if english==false and GetKeyState("LCTRL","P")==false and GetKeyState("RAlt","P")==false and GetKeyState("LWin","P")==false
 
 	SC10::й
 	SC11::д

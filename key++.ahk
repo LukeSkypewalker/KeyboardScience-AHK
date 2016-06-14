@@ -14,6 +14,8 @@ return
 ^+=:: reload
 
 
+
+
 capslock::
 	if (english==true){
 		english:=false
@@ -24,11 +26,15 @@ capslock::
 return
 
 
+
 #include norman_wide.ahk
 #include 3rd_layer.ahk
 #include number_raw_swap.ahk
 ;#include ru.ahk
+
 ;#include mouse.ahk
 
 
 ;TODO AltGr -some action or disable
+
+
