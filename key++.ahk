@@ -11,7 +11,7 @@ reload
 return
 
 ^!+SC1F:: suspend
-^+SC13:: reload
+^+=:: reload
 
 
 capslock::
